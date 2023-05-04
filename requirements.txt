@@ -1,6 +1,6 @@
 blinker
 click
-hlask
+Flask
 Flask-SQLAlchemy
 greenlet
 itsdangerous
