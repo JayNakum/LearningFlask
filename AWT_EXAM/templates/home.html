@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}
+blog-express
+{% endblock title %}
+{% block body %}
+{% for blog in blogs %}
+<a href="blog/{{blog.id}}">
+    <h3>{{blog.title}}</h3>
+</a>
+{% endfor %}
+{% endblock body %}

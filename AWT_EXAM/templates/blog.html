@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}
+{{blog_details.title}}
+{% endblock title %}
+{% block body %}
+<h1>{{blog_details.title}}</h1>
+<h6>{{blog_details.date.strftime("%b")}} {{blog_details.date.strftime("%d")}}, {{blog_details.date.strftime("%Y")}}</h6>
+<p>{{blog_details.content}}</p>
+{% endblock body %}

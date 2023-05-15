@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}
+Admin
+{% endblock title %}
+{% block body %}
+{% for blog in blogs %}
+<div class="hstack gap-5">
+    <div class="p-2">
+        <a href="blog/{{blog.id}}"><h3>{{blog.title}}</h3></a>
+    </div>
+    <div class="p-2">
+        <div class="d-grid gap-2 d-md-block">
+            <a href="blog/{{blog.id}}/edit"><button class="btn btn-outline-info btn-sm" type="button">Edit</button></a>
+            <a href="blog/{{blog.id}}/delete"><button class="btn btn-outline-danger btn-sm" type="button">Delete</button></a>
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% endblock body %}
